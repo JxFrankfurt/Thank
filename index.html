@@ -1,1 +1,43 @@
-thank
+<!DOCTYPE html>
+<html>
+<head>
+	<title>thank</title>
+    <link rel="stylesheet" type="text/css" href="thank.css">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+</head>
+<body>    
+        </div>
+        <label>What are you thankful for?
+            <input type="text" id="thankItem" autocomplete="thankItem"></input>
+        </label>
+        <button onclick="saveThank()">save</button>
+        <div id="thank-container"></div>
+	
+</body>
+</html>
+<brainstorm>
+    <!--what do i want from the data:
+        changed in browser
+        private per set of users
+        persistence
+
+    how to store the data:
+        database on AWS or Heroku
+        in oauth's storage google drive?-->
+</brainstorm>
+<script>
+    
+    let saveThank = function(){
+        displayThankItem()
+
+        //put all the data into the datastore
+    }
+    let displayThankItem = function(){
+        let template = `<p>foo</p>`;        
+        let div = document.createElement('div');
+        div.innerHTML = template;
+
+        let container = document.getElementById('thank-container');
+        container.appendChild(div);
+    }
+</script>
